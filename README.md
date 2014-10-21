@@ -1,30 +1,18 @@
-=== Unsplash: Stock Photo Library ===
-Contributors: dcooney
-Donate link: http://connekthq.com/donate/
-Tags: stock photo, photos, stock, upload, media library, media, library, ajax, image upload, direct upload, wp media uploader, free stock photos, unsplash, high res, high resolution
-Requires at least: 3.6
-Tested up to: 4.0
-Stable tag: 1.0
-License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+#Unsplash: Stock Photo Library
 
-One click uploads of Unsplash Stock Photos directly to your media library.
+Unsplash: Stock Photo Library is the fastest way to upload high quality stock photos from unsplash.com directly to your media library — all without ever leaving WordPress! 
 
-== Description ==
+***
 
-Unsplash: Stock Photo Uploader is the fastest way to upload high quality stock photos from unsplash.com directly to your media library — all without ever leaving WordPress! 
-
-
-= Features =
+###Features
 
 * Easily upload stock photos without ever leaving the comfort of your WordPress admin.
 * Great for rapid devlopment and prototyping with real world imagery.
 * Add photos from the plugin page or while editing your posts and pages.
 
-
 ***
 
-= Tested Browsers =
+###Tested Browsers =
 
 * Firefox (mac + pc)
 * Chrome (mac + pc)
@@ -33,27 +21,26 @@ Unsplash: Stock Photo Uploader is the fastest way to upload high quality stock p
 
 ***
 
-= Website =
+###Website =
 http://connekthq.com/unsplash/
 
 ***
 
+###Frequently Asked Questions
 
 
-== Frequently Asked Questions ==
-
-
-= Are the images upload to the Media Library? =
+Are the images upload to the Media Library?
 Yes, once clicked, the images are processed on the server then uploaded to the Media Library into the various sizes set in your functions.php file.
 
-= Are there server requirements? =
+Are there server requirements?
 
 Yes, this plugin needs to be able to write temporary images into wp-content/plugins/unsplash-stock-photos directory for image processing prior to being uploaded to the media library.
 
+***
 
-== Installation ==
+###Installation
 
-How to install Ajax Load More.
+How to install.
 
 = Using The WordPress Dashboard =
 
@@ -77,21 +64,17 @@ How to install Ajax Load More.
 3. Upload the `unsplash-stock-photos` directory to the `/wp-content/plugins/` directory
 4. Activate the plugin in the Plugin dashboard
 
-
 == Screenshots ==
 
 1. Plugin Settings and photo listing screen.
 2. Edit Post/Page Screen - Launch Unsplash from Add Unsplash button.
 3. Unsplash images in a lightbox on your post edit/new/post pages.
 
-== Changelog ==
+***
+
+###Changelog
 
 = 1.0 =
 * Initial Commit
-
-
-== Upgrade Notice ==
-
-* None 
 
 
