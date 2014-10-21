@@ -14,7 +14,6 @@ One click uploads of Unsplash Stock Photos directly to your media library.
 
 Unsplash: Stock Photo Library is the fastest way to upload high quality stock photos from unsplash.com directly to your media library — all without ever leaving WordPress! 
 
-
 = Features =
 
 * Easily upload stock photos without ever leaving the comfort of your WordPress admin.
@@ -38,8 +37,6 @@ http://connekthq.com/unsplash/
 
 ***
 
-
-
 == Frequently Asked Questions ==
 
 
@@ -52,8 +49,6 @@ Yes, this plugin needs to be able to write temporary images into wp-content/plug
 
 
 == Installation ==
-
-How to install.
 
 = Using The WordPress Dashboard =
 
