@@ -1,6 +1,6 @@
 #Unsplash: Stock Photo Library
 
-Unsplash: Stock Photo Library is the fastest way to upload high quality stock photos from unsplash.com directly to your media library — all without ever leaving WordPress! 
+Unsplash: Stock Photo Library is the fastest way to upload high quality stock photos from [unsplash.com](http://unsplash.com) directly to your media library — all without ever leaving WordPress! 
 
 
 ![Unsplash: Stock Photo Library plugin page](https://raw.githubusercontent.com/dcooney/unsplash/master/unsplash-stock-photos/screenshot-1.png)
