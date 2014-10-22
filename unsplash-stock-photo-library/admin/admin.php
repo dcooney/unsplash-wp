@@ -137,7 +137,7 @@ function usp_settings_page(){ ?>
 		<div class="wrap">
 		   <div class="header-wrap">
             <h2><?php echo USP_TITLE; ?> <span><?php echo USP_VERSION; ?></span></h2>
-            <p><?php _e('One click uploads of <a href="https://unsplash.com/" target="_blank">Unsplash Stock Photos</a> directly to your media library', USP_NAME); ?></p>            
+            <p><?php _e('One click uploads of <a href="https://unsplash.com/" target="_blank">unsplash.com</a> stock photos directly to your media library', USP_NAME); ?></p>            
          </div>
 		   <div class="cnkt-main">
 		   	<div class="group">   		   	   
