@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Unsplash: Stock Photo Library
-Plugin URI: http://connekthq.com/plugins/unsplash
+Plugin URI: http://connekthq.com/unsplash
 Description: One click uploads of Unsplash Stock Photos directly to your media library
 Author: Darren Cooney
 Twitter: @KaptonKaos
