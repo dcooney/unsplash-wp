@@ -32,10 +32,11 @@ http://connekthq.com/unsplashwp/
 ##Frequently Asked Questions
 
 
-Are the images upload to the Media Library?
+**Are the images upload to the Media Library?**
+
 Yes, once clicked, the images are processed on the server then uploaded to the Media Library into the various sizes set in your functions.php file.
 
-Are there server requirements?
+**Are there server requirements?**
 
 Yes, this plugin needs to be able to write temporary images into wp-content/plugins/unsplash-stock-photo-library directory for image processing prior to being uploaded to the media library.
 
