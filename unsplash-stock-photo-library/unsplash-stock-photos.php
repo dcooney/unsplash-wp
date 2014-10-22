@@ -1,8 +1,8 @@
 <?php
 /*
-Plugin Name: Unsplash: Stock Photo Library
-Plugin URI: http://connekthq.com/unsplash
-Description: One click uploads of Unsplash Stock Photos directly to your media library
+Plugin Name: Unsplash WP
+Plugin URI: http://connekthq.com/unsplashwp
+Description: One click uploads of unsplash.com stock photos directly to your media library
 Author: Darren Cooney
 Twitter: @KaptonKaos
 Author URI: http://connekthq.com
@@ -14,7 +14,7 @@ Copyright: Darren Cooney & Connekt Media
 
 
 define('USP_VERSION', '1.0');
-define('USP_TITLE', 'Unsplash: Stock Photo Library');
+define('USP_TITLE', 'Unsplash WP');
 
 class UnsplashStockPhotos {	
    

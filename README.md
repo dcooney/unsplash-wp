@@ -1,9 +1,9 @@
-#Unsplash: Stock Photo Library
+#Unsplash WP
 
-**Unsplash: Stock Photo Library** is the fastest way to upload high quality stock photos from [unsplash.com](http://unsplash.com) directly to your media library — all without ever leaving WordPress! 
+**Unsplash WP** is the fastest way to upload high quality stock photos from [unsplash.com](http://unsplash.com) directly to your media library — all without ever leaving WordPress! 
 
 
-![Unsplash: Stock Photo Library plugin page](https://raw.githubusercontent.com/dcooney/unsplash/master/unsplash-stock-photo-library/screenshot-1.png)
+![Unsplash: Stock Photo Library plugin page](https://raw.githubusercontent.com/dcooney/unsplash/master/unsplash-wp/screenshot-1.png)
 
 
 
@@ -25,7 +25,7 @@
 
 
 ##Website
-http://connekthq.com/unsplash/
+http://connekthq.com/unsplashwp/
 
 
 
@@ -37,7 +37,7 @@ Yes, once clicked, the images are processed on the server then uploaded to the M
 
 Are there server requirements?
 
-Yes, this plugin needs to be able to write temporary images into wp-content/plugins/unsplash-stock-photos directory for image processing prior to being uploaded to the media library.
+Yes, this plugin needs to be able to write temporary images into wp-content/plugins/unsplash-stock-photo-library directory for image processing prior to being uploaded to the media library.
 
 
 

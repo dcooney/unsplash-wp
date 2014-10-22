@@ -1,4 +1,4 @@
-=== Unsplash: Stock Photo Library ===
+=== Unsplash WP ===
 Contributors: dcooney
 Donate link: http://connekthq.com/donate/
 Tags: stock photo, photos, stock, upload, media library, media, library, ajax, image upload, direct upload, wp media uploader, free stock photos, unsplash, high res, high resolution
@@ -8,11 +8,11 @@ Stable tag: 1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-One click uploads of Unsplash Stock Photos directly to your media library.
+One click uploads of unsplash.com stock photos directly to your media library.
 
 == Description ==
 
-**Unsplash: Stock Photo Library** is the fastest way to upload high quality stock photos from [unsplash.com](http://unsplash.com) directly to your media library — **all without ever leaving WordPress**! 
+**Unsplash WP** is the fastest way to upload high quality stock photos from [unsplash.com](http://unsplash.com) directly to your media library — **all without ever leaving WordPress**! 
 
 
 = Features =
@@ -34,7 +34,7 @@ One click uploads of Unsplash Stock Photos directly to your media library.
 ***
 
 = Website =
-http://connekthq.com/unsplash/
+http://connekthq.com/unsplashwp/
 
 ***
 
