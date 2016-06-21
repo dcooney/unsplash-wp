@@ -1,81 +1,91 @@
-# Copyright (C) 2016 Unsplash WP
-# This file is distributed under the same license as the Unsplash WP package.
 msgid ""
 msgstr ""
-"Project-Id-Version: Unsplash WP 1.1.2\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/unsplash-stock-"
-"photo-library\n"
-"POT-Creation-Date: 2016-06-21 18:19:56+00:00\n"
+"Project-Id-Version: Unsplash WP\n"
+"POT-Creation-Date: 2016-06-21 20:20+0200\n"
+"PO-Revision-Date: 2016-06-21 20:20+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: nl_NL\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2016-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"X-Generator: Poedit 1.8.8\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: unsplash-stock-photos.php\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
 
 #: admin/admin.php:140
 msgid ""
 "One click uploads of <a href=\"https://unsplash.com/\" target=\"_blank"
 "\">unsplash.com</a> stock photos directly to your media library"
 msgstr ""
+"Met 1 klik  <a href=\"https://unsplash.com/\" target=\"_blank\">unsplash."
+"com</a> stock foto's rechtstreeks toevoegen aan je mediabibliotheek"
 
 #: admin/admin.php:145
 msgid "Back to Top"
-msgstr ""
+msgstr "Terug naar boven"
 
 #: admin/admin.php:158
 msgid "Save Settings"
-msgstr ""
+msgstr "Instellingen opslaan"
 
 #: admin/admin.php:174
 msgid "Sorry, settings could not be saved."
-msgstr ""
+msgstr "Sorry, de instellingen konden niet bewaard worden"
 
 #: admin/admin.php:223 admin/admin.php:257
 #: admin/includes/unsplash-photos.php:147
 #: admin/includes/unsplash-photos.php:157
 msgid "Unable to save image, check your server permissions."
 msgstr ""
+"Fout bij het bewaren van de foto, controleer je schrijfrechten op de server"
 
 #: admin/admin.php:272
 msgid "File successfully uploaded to media library."
-msgstr ""
+msgstr "Bestand toegevoegd aan de mediabibliotheek"
 
 #: admin/admin.php:280
 msgid "Nothing to delete, file does not exist"
-msgstr ""
+msgstr "Niets om te verwijderen, dit bestand bestaat niet"
 
 #: admin/admin.php:313
 msgid "Plugin Settings"
-msgstr ""
+msgstr "Plugin instellingen"
 
 #: admin/admin.php:321
 msgid "Set Upload Image Width"
-msgstr ""
+msgstr "Stel de breedte van de foto in "
 
 #: admin/admin.php:330
 msgid "Set Upload Image Height"
-msgstr ""
+msgstr "Stel de hoogte van de foto in "
 
 #: admin/admin.php:339
 msgid "Images Per Page"
-msgstr ""
+msgstr "Foto's per pagina"
 
 #: admin/admin.php:385
 msgid "Width:"
-msgstr ""
+msgstr "Breedte:"
 
 #: admin/admin.php:403
 msgid "Height:"
-msgstr ""
+msgstr "Hoogte:"
 
 #: admin/admin.php:421
 msgid "# Per Page:"
-msgstr ""
+msgstr "# Per pagina:"
 
 #: admin/includes/cta/about.php:2
 msgid "About the Plugin"
-msgstr ""
+msgstr "Over de plugin"
 
 #: admin/includes/cta/about.php:4
 msgid ""
@@ -84,28 +94,34 @@ msgid ""
 "\"_blank\">unsplash.com</a> directly to your media library &mdash; all "
 "without ever leaving WordPress!"
 msgstr ""
+"<strong>Unsplash: Stock Photo Uploader</strong> is de snelste manier een "
+"hoge kwaliteit stock foto's van  <a href=\"http://unsplash.com\" target="
+"\"_blank\">unsplash.com</a> toe te voegen aan je mediabibliotheek, zonder "
+"dat je je site moet verlaten!"
 
 #: admin/includes/cta/about.php:6
 msgid ""
 "Developed by <a href=\"http://connekthq.com/\" target=\"_blank\">Darren "
 "Cooney</a>"
 msgstr ""
+"Ontwikkeld door <a href=\"http://connekthq.com/\" target=\"_blank\">Darren "
+"Cooney</a>"
 
 #: admin/includes/cta/resources.php:2
 msgid "Credits"
-msgstr ""
+msgstr "Credits"
 
 #: admin/includes/cta/resources.php:6
 msgid "Quality Photos and Inspiration"
-msgstr ""
+msgstr "Kwaliteit foto's en inspiratie"
 
 #: admin/includes/cta/resources.php:7
 msgid "Free (do whatever you want) high-resolution stock photos."
-msgstr ""
+msgstr "Gratis (doe er mee wat je wil) hoge resolutie stock foto’s."
 
 #: admin/includes/cta/resources.php:11
 msgid "Images and API"
-msgstr ""
+msgstr "Foto’s en API"
 
 #: admin/includes/cta/resources.php:12
 msgid ""
@@ -114,68 +130,75 @@ msgid ""
 "\"blank\">API</a> was provided by the amazing team at <a href=\"https://"
 "unsplash.it\" target=\"blank\">Unsplash It</a>"
 msgstr ""
+"<a href=\"https://unsplash.it\" target=\"blank\">Unsplash It</a> - Toegang "
+"tot de  Unsplash stock foto bibliotheek en de  <a href=\"https://unsplash.it/"
+"list\" target=\"blank\">API</a> werd mogelijk gemaakt door het geweldige "
+"team van <a href=\"https://unsplash.it\" target=\"blank\">Unsplash It</a>"
 
 #: admin/includes/cta/resources.php:16
 msgid "Visit Unsplash.com"
-msgstr ""
+msgstr "Bezoek unsplash.com"
 
 #: admin/includes/unsplash-photos.php:2
 msgid "Order"
-msgstr ""
+msgstr "Sorteren"
 
 #: admin/includes/unsplash-photos.php:3
 msgid "Recent"
-msgstr ""
+msgstr "Recent"
 
 #: admin/includes/unsplash-photos.php:4
 msgid "Oldest"
-msgstr ""
+msgstr "Oudste"
 
 #: admin/includes/unsplash-photos.php:5
 msgid "Random"
-msgstr ""
+msgstr "Willekeurig"
 
 #: admin/includes/unsplash-photos.php:10
 msgid "Load More Images"
-msgstr ""
+msgstr "Meer foto's laden"
 
 #: admin/includes/unsplash-photos.php:66
 msgid "Error loading Unsplash JSON feed from https://unsplash.it/list."
 msgstr ""
+"Fout bij het ophalen van de Unsplash JSON feed op https://unsplash.it/list."
 
 #: admin/includes/unsplash-photos.php:84
 msgid "Photo by: "
-msgstr ""
+msgstr "Foto door: "
 
 #: admin/includes/unsplash-photos.php:84
 msgid "Click to upload photo "
-msgstr ""
+msgstr "Click om een foto toe te voegen"
 
 #: admin/includes/unsplash-photos.php:88
 msgid "View Full Size"
-msgstr ""
+msgstr "Bekijk grote foto"
 
 #: unsplash-stock-photos.php:57
 msgid "Upload Photos"
-msgstr ""
+msgstr "Foto’s toevoegen"
 
 #. Plugin Name of the plugin/theme
 msgid "Unsplash WP"
-msgstr ""
+msgstr "Unsplash WP"
 
 #. Plugin URI of the plugin/theme
 msgid "http://connekthq.com/unsplashwp"
-msgstr ""
+msgstr "http://connekthq.com/unsplashwp"
 
 #. Description of the plugin/theme
 msgid ""
 "One click uploads of unsplash.com stock photos directly to your media library"
 msgstr ""
+"Met 1 klik  <a href=\"https://unsplash.com/\" target=\"_blank\">unsplash."
+"com</a> stock foto's rechtstreeks toevoegen aan je mediabibliotheek"
 
 #. Author of the plugin/theme
 msgid "Darren Cooney"
-msgstr ""
+msgstr "Darren Cooney"
 
 #. Author URI of the plugin/theme
 msgid "http://connekthq.com"
-msgstr ""
+msgstr "http://connekthq.com"

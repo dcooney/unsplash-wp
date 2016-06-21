@@ -155,7 +155,7 @@ function usp_settings_page(){ ?>
    					//get the older values, wont work the first time
    					$options = get_option( '_usp_settings' ); ?>	
    					<div class="submit-usp_OptionsForm">	       
-   		            <?php submit_button('Save Settings'); ?>
+   		            <?php submit_button(__('Save Settings', 'unsplash-stock-photos')); ?>
    		            <div class="loading"></div>	   		            
    					</div>	 
    					<div id="saveResult"></div>
