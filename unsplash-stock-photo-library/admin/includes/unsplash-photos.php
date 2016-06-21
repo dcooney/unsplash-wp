@@ -1,13 +1,13 @@
 <ul class="order">
-   <li><?php _e('Order', USP_NAME); ?>:</li>
-   <li><a href="javascript:void(0);" id="usp-newest"><?php _e('Recent', USP_NAME); ?></a></li>
-   <li><a href="javascript:void(0);" id="usp-oldest"><?php _e('Oldest', USP_NAME); ?></a></li>
-   <li><a href="javascript:void(0);" id="usp-randomize"><?php _e('Random', USP_NAME); ?></a></li>
+   <li><?php _e('Order', 'unsplash-stock-photos'); ?>:</li>
+   <li><a href="javascript:void(0);" id="usp-newest"><?php _e('Recent', 'unsplash-stock-photos'); ?></a></li>
+   <li><a href="javascript:void(0);" id="usp-oldest"><?php _e('Oldest', 'unsplash-stock-photos'); ?></a></li>
+   <li><a href="javascript:void(0);" id="usp-randomize"><?php _e('Random', 'unsplash-stock-photos'); ?></a></li>
 </ul>
 <ul id="usp_photos"></ul>
 <div class="more-wrap">
    <span class="loading"></span>
-   <input type="button" id="usp-load-more" name="usp-load-more" value="<?php _e('Load More Images', USP_NAME); ?>" class="button">
+   <input type="button" id="usp-load-more" name="usp-load-more" value="<?php _e('Load More Images', 'unsplash-stock-photos'); ?>" class="button">
 </div>
 <?php
    $options = get_option( 'usp_settings' );
@@ -63,7 +63,7 @@
 	      usp_pages = Math.round(usp_photos_length / usp_load); // Generate the # of pages
          get_photos();  // Get the photos now :)                      
       }).error(function() { 
-         console.log("<?php _e('Error loading Unsplash JSON feed from https://unsplash.it/list.', USP_NAME); ?>")
+         console.log("<?php _e('Error loading Unsplash JSON feed from https://unsplash.it/list.', 'unsplash-stock-photos'); ?>")
       });
       
       function get_photos(){
@@ -81,11 +81,11 @@
                   author = usp_photos[n].author,
                   link = usp_photos[n].post_url,
                   el = '<li>';
-                  el += '<a class="upload" href="'+ link +'" data-url="'+full_size+'" data-desc="<?php _e('Photo by: ',USP_NAME); ?> '+author+'" title="<?php _e('Click to upload photo ',USP_NAME); ?>">';
+                  el += '<a class="upload" href="'+ link +'" data-url="'+full_size+'" data-desc="<?php _e('Photo by: ','unsplash-stock-photos'); ?> '+author+'" title="<?php _e('Click to upload photo ','unsplash-stock-photos'); ?>">';
                   el += '<img width="'+ usp_thumb_width +'" height="'+ usp_thumb_height +'" src="'+ img +'"/>'
                   el += '</a>';
                   el += '<div class="controls">';
-                  el += '<span class="num zoom-in" data-href="'+link+'" title="<?php _e('View Full Size', USP_NAME); ?>"><i class="fa fa-search-plus"></i></span>';
+                  el += '<span class="num zoom-in" data-href="'+link+'" title="<?php _e('View Full Size', 'unsplash-stock-photos'); ?>"><i class="fa fa-search-plus"></i></span>';
                   el += '<span class="num">#'+id+'</span>';
                   el += '</div>';
                   el += '</li>';           
@@ -144,7 +144,7 @@
                      }else{ // If reponse is empty
                         el.removeClass('saving').removeClass('uploaded');
                         if(!$('span.err', el).length){
-                           el.append('<span class="err" title="<?php _e('Unable to save image, check your server permissions.', USP_NAME) ;?>"><i class="fa fa-exclamation-circle"></i></span>');
+                           el.append('<span class="err" title="<?php _e('Unable to save image, check your server permissions.', 'unsplash-stock-photos') ;?>"><i class="fa fa-exclamation-circle"></i></span>');
                         }
                      }
 	
@@ -154,7 +154,7 @@
 							console.log(status);
 							el.removeClass('saving').removeClass('uploaded');
                      if(!$('span.err', el).length){
-                        el.append('<span class="err" title="<?php _e('Unable to save image, check your server permissions.', USP_NAME) ;?>"><i class="fa fa-exclamation-circle"></i></span>');
+                        el.append('<span class="err" title="<?php _e('Unable to save image, check your server permissions.', 'unsplash-stock-photos') ;?>"><i class="fa fa-exclamation-circle"></i></span>');
                      }
 						}
                }); 

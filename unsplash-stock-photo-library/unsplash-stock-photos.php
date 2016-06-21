@@ -9,6 +9,8 @@ Author URI: http://connekthq.com
 Version: 1.1.2
 License: GPL
 Copyright: Darren Cooney & Connekt Media
+Text Domain: unsplash-stock-photos
+Domain Path: /lang
 */
 
 
@@ -21,7 +23,6 @@ class UnsplashStockPhotos {
    function __construct() {	     
       define('USP_PATH', plugin_dir_path(__FILE__));
 		define('USP_ADMIN_URL', plugins_url('admin/', __FILE__));  
-		define('USP_NAME', 'unsplash_plugin');
 		add_filter( 'plugin_action_links_' . plugin_basename(__FILE__), array(&$this, 'add_action_links') );
 		
 		// load text domain
@@ -53,7 +54,7 @@ class UnsplashStockPhotos {
 	*/
    function add_action_links ( $links ) {
       $mylinks = array(
-         '<a href="' . admin_url( 'upload.php?page=unsplash' ) . '">Upload Photos</a>',
+         '<a href="' . admin_url( 'upload.php?page=unsplash' ) . '">' . _e('Upload Photos', 'unsplash-stock-photos') . '</a>',
       );
       return array_merge( $links, $mylinks );
    }

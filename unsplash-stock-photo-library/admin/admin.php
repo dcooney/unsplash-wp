@@ -137,12 +137,12 @@ function usp_settings_page(){ ?>
 		<div class="wrap">
 		   <div class="header-wrap">
             <h2><?php echo USP_TITLE; ?> <span><?php echo USP_VERSION; ?></span></h2>
-            <p><?php _e('One click uploads of <a href="https://unsplash.com/" target="_blank">unsplash.com</a> stock photos directly to your media library', USP_NAME); ?></p>            
+            <p><?php _e('One click uploads of <a href="https://unsplash.com/" target="_blank">unsplash.com</a> stock photos directly to your media library', 'unsplash-stock-photos'); ?></p>            
          </div>
 		   <div class="cnkt-main">
 		   	<div class="group">   		   	   
 	   			<?php include( USP_PATH . 'admin/includes/unsplash-photos.php');	?>    
-	   			<p class="back2top"><a href="#wpcontent"><i class="fa fa-chevron-up"></i> <?php _e('Back to Top', USP_NAME); ?></a></p>  	   			
+	   			<p class="back2top"><a href="#wpcontent"><i class="fa fa-chevron-up"></i> <?php _e('Back to Top', 'unsplash-stock-photos'); ?></a></p>  	   			
 		   	</div>
 		   </div>		   
 		   <div class="cnkt-sidebar">
@@ -171,7 +171,7 @@ function usp_settings_page(){ ?>
                               });
                            },
                            error: function(){
-                              alert("<?php _e('Sorry, settings could not be saved.', USP_NAME); ?>");
+                              alert("<?php _e('Sorry, settings could not be saved.', 'unsplash-stock-photos'); ?>");
                            }
                         }); 
                         return false; 
@@ -220,7 +220,7 @@ function usp_upload_image(){
       
       // Is directory writeable
       if (!is_writable(USP_PATH.'admin/tmp/')) {
-          echo __('Unable to save image, check your server permissions.', USP_NAME);
+          echo __('Unable to save image, check your server permissions.', 'unsplash-stock-photos');
       }
       
    	
@@ -254,7 +254,7 @@ function usp_upload_image(){
       $json = json_encode( 
       	array(
       		'error' => true,
-      		'msg' => __('Unable to save image, check your server permissions.', USP_NAME)
+      		'msg' => __('Unable to save image, check your server permissions.', 'unsplash-stock-photos')
    		)
       );
       
@@ -265,11 +265,11 @@ function usp_upload_image(){
          $file = media_sideload_image($upload_path.''.$tmp, 0, $desc);
         
          // Success JSON      
-         //echo __('File successfully uploaded to media library.', USP_NAME); 
+         //echo __('File successfully uploaded to media library.', 'unsplash-stock-photos'); 
          $json = json_encode( 
          	array(
          		'error' => false,
-         		'msg' => __('File successfully uploaded to media library.', USP_NAME)
+         		'msg' => __('File successfully uploaded to media library.', 'unsplash-stock-photos')
       		)
          );
                
@@ -277,7 +277,7 @@ function usp_upload_image(){
          if(file_exists($tmp_path.''.$tmp)){
              unlink($tmp_path.''.$tmp);
          }else{
-            echo __('Nothing to delete, file does not exist', USP_NAME);
+            echo __('Nothing to delete, file does not exist', 'unsplash-stock-photos');
          }           
       }
    	
@@ -310,7 +310,7 @@ function usp_admin_init(){
 	
 	add_settings_section( 
 		'usp_general_settings',  
-		__('Plugin Settings', USP_NAME), 
+		__('Plugin Settings', 'unsplash-stock-photos'), 
 		'usp_general_settings_callback', 
 		'unsplash' 
 	);	
@@ -318,7 +318,7 @@ function usp_admin_init(){
 	// Download Width
 	add_settings_field( 
 		'_usp_dw', 
-		__('Set Upload Image Width', USP_NAME ), 
+		__('Set Upload Image Width', 'unsplash-stock-photos' ), 
 		'usp_dw_callback', 
 		'unsplash', 
 		'usp_general_settings' 
@@ -327,7 +327,7 @@ function usp_admin_init(){
 	// Download Height
 	add_settings_field( 
 		'_usp_dh', 
-		__('Set Upload Image Height', USP_NAME ), 
+		__('Set Upload Image Height', 'unsplash-stock-photos' ), 
 		'usp_dh_callback', 
 		'unsplash', 
 		'usp_general_settings' 
@@ -336,7 +336,7 @@ function usp_admin_init(){
 	// Images per page
 	add_settings_field( 
 		'_usp_pp', 
-		__('Images Per Page', USP_NAME ), 
+		__('Images Per Page', 'unsplash-stock-photos' ), 
 		'usp_pp_callback', 
 		'unsplash', 
 		'usp_general_settings' 
@@ -353,7 +353,7 @@ function usp_admin_init(){
 */
 
 function usp_general_settings_callback() {
-    //echo '<p>' . __('Customize your file download', USP_NAME) . '</p>';
+    //echo '<p>' . __('Customize your file download', 'unsplash-stock-photos') . '</p>';
 }
 
 
@@ -382,7 +382,7 @@ function usp_dw_callback(){
 	if(!isset($options['_usp_dw'])) 
 	   $options['_usp_dw'] = '1600';
 		
-	echo '<label for="usp_settings[_usp_dw]">'.__('Width:', USP_NAME).'</label><input type="number" id="usp_settings[_usp_dw]" name="usp_settings[_usp_dw]" value="'.$options['_usp_dw'].'" class="sm" step="20" max="3200" /> ';	
+	echo '<label for="usp_settings[_usp_dw]">'.__('Width:', 'unsplash-stock-photos').'</label><input type="number" id="usp_settings[_usp_dw]" name="usp_settings[_usp_dw]" value="'.$options['_usp_dw'].'" class="sm" step="20" max="3200" /> ';	
 }
 
 
@@ -400,7 +400,7 @@ function usp_dh_callback(){
 	if(!isset($options['_usp_dh'])) 
 	   $options['_usp_dh'] = '900';
 		
-	echo '<label for="usp_settings[_usp_dh]">'.__('Height:', USP_NAME).'</label><input type="number" id="usp_settings[_usp_dh]" name="usp_settings[_usp_dh]" value="'.$options['_usp_dh'].'" class="sm" step="20" max="3200" /> ';	
+	echo '<label for="usp_settings[_usp_dh]">'.__('Height:', 'unsplash-stock-photos').'</label><input type="number" id="usp_settings[_usp_dh]" name="usp_settings[_usp_dh]" value="'.$options['_usp_dh'].'" class="sm" step="20" max="3200" /> ';	
 }
 
 
@@ -418,7 +418,7 @@ function usp_pp_callback(){
 	if(!isset($options['_usp_pp'])) 
 	   $options['_usp_pp'] = '20';
 		
-	echo '<label for="usp_settings[_usp_pp]">'.__('# Per Page:', USP_NAME).'</label><input type="number" id="usp_settings[_usp_pp]" name="usp_settings[_usp_pp]" value="'.$options['_usp_pp'].'" class="sm" step="5" max="60" /> ';	
+	echo '<label for="usp_settings[_usp_pp]">'.__('# Per Page:', 'unsplash-stock-photos').'</label><input type="number" id="usp_settings[_usp_pp]" name="usp_settings[_usp_pp]" value="'.$options['_usp_pp'].'" class="sm" step="5" max="60" /> ';	
 }
 
 
