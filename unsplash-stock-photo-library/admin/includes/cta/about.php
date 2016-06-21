@@ -1,9 +1,9 @@
 <div class="cta padding-bottom">
-  <h3>About the Plugin</h3>
+  <h3><?php _e('About the Plugin', USP_NAME); ?></h3>
 
-  <p><strong>Unsplash: Stock Photo Uploader</strong> is the fastest way to upload high quality stock photos from <a href="http://unsplash.com" target="_blank">unsplash.com</a> directly to your media library &mdash; all without ever leaving WordPress! </p>
+  <p><?php _e('<strong>Unsplash: Stock Photo Uploader</strong> is the fastest way to upload high quality stock photos from <a href="http://unsplash.com" target="_blank">unsplash.com</a> directly to your media library &mdash; all without ever leaving WordPress!', USP_NAME); ?> </p>
 
-  <p class="small">Developed by <a href="http://connekthq.com/" target="_blank">Darren Cooney</a></p><br>
+  <p class="small"><?php _e('Developed by <a href="http://connekthq.com/" target="_blank">Darren Cooney</a>', USP_NAME ); ?></p><br>
 
   
   <h4 style="margin-bottom: 10px;">Other Projects</h4>

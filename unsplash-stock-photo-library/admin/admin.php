@@ -310,7 +310,7 @@ function usp_admin_init(){
 	
 	add_settings_section( 
 		'usp_general_settings',  
-		'Plugin Settings', 
+		__('Plugin Settings', USP_NAME), 
 		'usp_general_settings_callback', 
 		'unsplash' 
 	);	
