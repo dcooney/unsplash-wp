@@ -63,7 +63,7 @@
 	      usp_pages = Math.round(usp_photos_length / usp_load); // Generate the # of pages
          get_photos();  // Get the photos now :)                      
       }).error(function() { 
-         alert("<?php _e('Error loading Unsplash JSON feed.', USP_NAME); ?>")
+         console.log("<?php _e('Error loading Unsplash JSON feed from https://unsplash.it/list.', USP_NAME); ?>")
       });
       
       function get_photos(){
@@ -115,23 +115,47 @@
                $.ajax({
 						type: 'POST',
 						url: usp_admin_localize.ajax_admin_url,
+						dataType: 'JSON',
+						
 						data: {
 							action: 'usp_upload_image',
 							image: image, 
 							description: description, 
 							nonce: usp_admin_localize.usp_admin_nonce,
 						},
-						success: function(response) {											  		
-						  console.log(response);                               
-                    el.removeClass('saving').addClass('uploaded');
-                    if(!$('span.check', el).length){
-                       el.append('<span class="check"><i class="fa fa-check"></i></span>');
-                    }
+						
+						success: function(response) {	   									  		
+                     console.log(response); 
+                     if(response){
+                        var hasError = response.error,
+                            msg = response.msg;
+                                                    
+                        if(hasError){ // Error
+                           el.removeClass('saving').removeClass('uploaded');
+                           if(!$('span.err', el).length){
+                              el.append('<span class="err" title="'+ msg +'"><i class="fa fa-exclamation-circle"></i></span>');
+                           }
+                        }else{ // Success!
+                           el.removeClass('saving').addClass('uploaded');
+                           if(!$('span.check', el).length){
+                              el.append('<span class="check" title="'+ msg +'"><i class="fa fa-check"></i></span>');
+                           }
+                        }
+                     }else{ // If reponse is empty
+                        el.removeClass('saving').removeClass('uploaded');
+                        if(!$('span.err', el).length){
+                           el.append('<span class="err" title="<?php _e('Unable to save image, check your server permissions.', USP_NAME) ;?>"><i class="fa fa-exclamation-circle"></i></span>');
+                        }
+                     }
 	
 						},
+						
 						error: function(xhr, status, error) {
-						   alert(status);
 							console.log(status);
+							el.removeClass('saving').removeClass('uploaded');
+                     if(!$('span.err', el).length){
+                        el.append('<span class="err" title="<?php _e('Unable to save image, check your server permissions.', USP_NAME) ;?>"><i class="fa fa-exclamation-circle"></i></span>');
+                     }
 						}
                }); 
             }else{                              

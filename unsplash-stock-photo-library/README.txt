@@ -3,8 +3,8 @@ Contributors: dcooney
 Donate link: http://connekthq.com/donate/
 Tags: stock photo, photos, stock, upload, media library, media, library, ajax, image upload, direct upload, wp media uploader, free stock photos, unsplash, high res, high resolution
 Requires at least: 3.6
-Tested up to: 4.0
-Stable tag: 1.0
+Tested up to: 4.5
+Stable tag: 1.1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -14,6 +14,9 @@ One click uploads of unsplash.com stock photos directly to your media library.
 
 **Unsplash WP** is the fastest way to upload high quality stock photos from [unsplash.com](http://unsplash.com) directly to your media library — **all without ever leaving WordPress**! 
 
+> #### Would you like to help contribute to UnsplashWP?
+> Unsplash has released a public API and we are looking for developers to help us build V2 of this plugin.
+> Please get in touch with us on [Twitter](https://twitter.com/connekthq) or [email](https://connekthq.com/contact/) if you are interested!
 
 = Features =
 
@@ -34,7 +37,7 @@ One click uploads of unsplash.com stock photos directly to your media library.
 ***
 
 = Website =
-http://connekthq.com/unsplashwp/
+https://connekthq.com/plugins/unsplash-wp/
 
 ***
 
@@ -87,6 +90,16 @@ How to install Ajax Load More.
 3. Unsplash images in a lightbox on your post edit/new/post pages.
 
 == Changelog ==
+
+= 1.1.2 =
+* Security update - adding admin verification for image uploads. 
+
+= 1.1.1 =
+* Replacing alert warning with console.log msg if Unsplash API feed is down. 
+
+= 1.1 =
+* Improved error and success handling
+* Replacing file_get_contents with cURL for image handling.
 
 = 1.0 =
 * Initial Commit
